@@ -1,7 +1,7 @@
 let inputDir = {x: 0, y: 0}; 
-const foodSound = new Audio('./Media/food.mp3');
-const gameOverSound = new Audio('./Media/gameover.mp3');
-const moveSound = new Audio('./Media/move.mp3');
+const foodSound = new Audio('media/food.mp3');
+const gameOverSound = new Audio('media/gameover.mp3');
+const moveSound = new Audio('media/move.mp3');
 const musicSound = new Audio('');
 // const abcud = new Audio('');
 let speed = 16;
