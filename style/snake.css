@@ -5,7 +5,8 @@
 }
 
 .body{
-    background: linear-gradient(rgb(252, 252, 252), rgb(228, 227, 227));
+    
+    /* background: linear-gradient(rgb(252, 252, 252), rgb(228, 227, 227)); */
     min-height: 100vh;
     /* min-width: 50vh; */
     background-size: 100vw 100vh;
@@ -136,7 +137,7 @@ object-fit: fill;
     border-radius: 8px;
 }
 .dangers{
-    background: url("../images/fire.gif");
+    background: url("../images/download.jpg");
     border: .25vmin solid black;
     border-radius: 8px;
 }
