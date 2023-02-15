@@ -1,151 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="cards/stylelanding.css"
-   
-  </head>
-  <body>
-    <h1>Play What you want!!</h1>
-    <div class="gallery">
-      <div class="content">
-        <img
-          src="../images/snake.jpg"
-          alt="snake"
-        />
-        <h3>Snake Game</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <!-- <h5>Top Rated</h5>
-        <ul>
-          <li><i class="fa fa-star checked"></i></li>
-          <li><i class="fa fa-star checked"></i></li>
-          <li><i class="fa fa-star checked"></i></li>
-          <li><i class="fa fa-star checked"></i></li>
-          <li><i class="fa fa-star"></i></li>
-        </ul> -->
-        <button class="buy-1" onclick="myFunction()"target="_blank">Play Now</button>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnakeGame_eat_an_Repeat</title>
+    <link rel="stylesheet" href="style/snake.css">
+</head>
+<body>
+    <div class="body">
+        <!-- <div id="timer">
+            <p>You have: <span >60</span> seconds remaining!</p>
 
-      <div class="content">
-        <img
-          src="../images/tictac.png"
-          alt="tictactoe"
-        />
-        <h3>Tic Tac Toe</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <!-- <h5>Top Rated</h5>
-        <ul>
-          <li><i class="fa fa-star checked"></i></li>
-          <li><i class="fa fa-star checked"></i></li>
-          <li><i class="fa fa-star checked"></i></li>
-          <li><i class="fa fa-star"></i></li>
-          <li><i class="fa fa-star"></i></li>
-        </ul> -->
-        <button class="buy-2">Play Now</button>
-      </div>
-
-      <div class="content">
-        <img
-          src="../images/memory.jpg"
-          alt="memorygame"
-        />
-        <h3>Matching Cards</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <!-- <h5>Top Rated</h5>
-        <ul>
-          <li><i class="fa fa-star checked"></i></li>
-          <li><i class="fa fa-star checked"></i></li>
-          <li><i class="fa fa-star checked"></i></li>
-          <li><i class="fa fa-star checked"></i></li>
-          <li><i class="fa fa-star"></i></li>
-        </ul> -->
-        <button class="buy-3">Play Now</button>
-      </div>
-
-      <div class="content">
-        <img
-          src="https://images.unsplash.com/photo-1598814165187-ed79437d7490?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8cG9yc2NoZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-          alt="Cars"
-        />
-        <h3>Guess the Word</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <!-- <h5>Top Rated</h5>
-        <ul>
-          <li><i class="fa fa-star checked"></i></li>
-          <li><i class="fa fa-star checked"></i></li>
-          <li><i class="fa fa-star checked"></i></li>
-          <li><i class="fa fa-star checked"></i></li>
-          <li><i class="fa fa-star checked"></i></li>
-        </ul> -->
-        <button class="buy-4">Play Now</button>
-      </div>
-
-      <!-- <div class="content">
-        <img
-          src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2Fyc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-          alt="Cars"
-        />
-        <h3>Chevrolet camaro</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <h5>$ 150000</h5>
-        <ul>
-          <li><i class="fa fa-star checked"></i></li>
-          <li><i class="fa fa-star checked"></i></li>
-          <li><i class="fa fa-star checked"></i></li>
-          <li><i class="fa fa-star checked"></i></li>
-          <li><i class="fa fa-star"></i></li>
-        </ul>
-        <button class="buy-1">Play Now</button>
-      </div>
-
-      <div class="content">
-        <img
-          src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNhcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
-          alt="Cars"
-        />
-        <h3>Daimler mercedes</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <h5>$ 250000</h5>
-        <ul>
-          <li><i class="fa fa-star checked"></i></li>
-          <li><i class="fa fa-star checked"></i></li>
-          <li><i class="fa fa-star checked"></i></li>
-          <li><i class="fa fa-star"></i></li>
-          <li><i class="fa fa-star"></i></li>
-        </ul>
-        <button class="buy-2">Play Now</button>
-      </div>
-      <div class="content">
-        <img
-          src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2Fyc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-          alt="Cars"
-        />
-        <h3>Chevrolet camaro</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <h5>$ 150000</h5>
-        <ul>
-          <li><i class="fa fa-star checked"></i></li>
-          <li><i class="fa fa-star checked"></i></li>
-          <li><i class="fa fa-star checked"></i></li>
-          <li><i class="fa fa-star checked"></i></li>
-          <li><i class="fa fa-star"></i></li>
-        </ul>
-        <button class="buy-1">Play Now</button>
-      </div> -->
+            <button id="playAgainButton" onclick="start()">Go!</button>
+        </div>  -->
+        <div id="scoreBox">Score: 0</div>
+        <div id="hiscoreBox">HiScore: 0</div>
+        <img id = "snakeimage" src="images/snakegame-removebg-preview.png" alt="nhi he">        
+        <!-- <img id = "snakeimage1" src="snakegame-removebg-preview.png" alt="nhi he">         -->
+        <img id = "snakeimage2" src="images/snakegame-removebg-preview.png" alt="nhi he">        
+        <!-- <img id = "snakeimage3" src="snakegame-removebg-preview.png" alt="nhi he">         -->
+        <!-- <img id = "snakeimage4" src="snakegame-removebg-preview.png" alt="nhi he">         -->
+        <div id="board">
+            
+            
+        </div>
     </div>
-  </body>
+</body>
+<script src="snake.js"></script>
 </html>
-<script>
-  function myFunction() {
-    window.location.href = "https://sanidhyarc200.github.io/Snakegamenew/";
-  }
-</script>
